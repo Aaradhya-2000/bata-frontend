@@ -18,7 +18,7 @@ const OurOrder = () => {
   // Load orders from backend
   const loadData = async () => {
     try {
-      const api = `${BackendURL}admin/ourpro`;
+      const api = `${BackendURL}user/order/?token=${token}`;
       const response = await axios.get(api);
       console.log(response.data)
       // setMydata(response.data);
