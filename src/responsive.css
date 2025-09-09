@@ -251,5 +251,9 @@
     .product-details .product-img{
       width: 100%;
     }
+    .order-wrapper{
+      flex-direction: column;
+    }
+
   }
   
