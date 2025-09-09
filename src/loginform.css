@@ -1,0 +1,118 @@
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f0f3; /* soft pale blue-gray */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 32px;
+    background: #ffffff; /* clean white */
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    color: #334e68; /* dark slate blue */
+    text-align: center;
+    user-select: none;
+    transition: box-shadow 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .login-form:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #2c3e50; /* deep blue-gray */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .input-group {
+    margin-bottom: 22px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .input-group label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #627d98; /* muted blue-gray */
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.02em;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: 1.8px solid #b0c4d6; /* subtle blue border */
+    background: #f9fbfc; /* very light gray-blue */
+    transition: border-color 0.3s ease, background 0.3s ease;
+    font-family: inherit;
+    color: #334e68;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .input-field::placeholder {
+    color: #a3b1c2;
+    font-style: italic;
+  }
+  
+  .input-field:focus {
+    border-color: #3b82f6; /* bright but calm blue */
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  }
+  
+  .button.submit-button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4f46e5 0%, #2563eb 100%); /* soft royal blue */
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.5);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button.submit-button:hover,
+  .button.submit-button:focus {
+    background: linear-gradient(135deg, #4338ca 0%, #1e40af 100%);
+    box-shadow: 0 12px 30px rgba(30, 64, 175, 0.7);
+    outline: none;
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 32px 24px;
+    }
+  
+    .form-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .button.submit-button {
+      font-size: 1.1rem;
+      padding: 14px 0;
+    }
+  }
+  

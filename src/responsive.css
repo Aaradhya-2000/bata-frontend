@@ -1,0 +1,244 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+  }
+  
+  .hero nav {
+    /* max-width: 1200px; */
+    width: 100%;
+    /* margin: auto; */
+    /* padding: 0 15px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar-1 and Navbar-2 container styles */
+  .navbar-1,
+  .navbar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  /* Logo styling */
+  .logo {
+    width: 130px;
+    cursor: pointer;
+  }
+  
+  /* Hamburger styles */
+  .hamburger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* hidden by default, shown on small screens */
+    color: #333;
+  }
+  
+  /* Menu (ul) basic styles */
+  .top-menu,
+  .bottom-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Links */
+  .a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .a:hover {
+    color: #007bff;
+  }
+  
+  /* nav-icons container */
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Cart badge */
+  .cart-menu-item p {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 0 7px;
+    border-radius: 50%;
+    font-size: 14px;
+    user-select: none;
+  }
+  
+  /* Slider promo message */
+  .slider {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+  }
+  
+  /* Responsive for screens <= 786px */
+  @media (max-width: 786px) {
+    /* Show hamburger buttons */
+    .hamburger {
+      display: block;
+    }
+    
+    /* Hide menus by default */
+    .top-menu,
+    .bottom-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      width: 220px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1000;
+    }
+  
+    .footer-section .footer-top{
+        flex-direction: column;
+    }
+    .product-context{
+        grid-template-columns: 1fr !important;
+    }
+    /* Show menu when open */
+    .top-menu.open,
+    .bottom-menu.open {
+      max-height: 500px; /* enough for all items */
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    /* Menu items vertical spacing */
+    .top-menu li,
+    .bottom-menu li {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .top-menu li:last-child,
+    .bottom-menu li:last-child {
+      border-bottom: none;
+    }
+  
+    /* Make icons and links aligned horizontally in menu items */
+    .nav-icons {
+
+      gap: 12px;
+    }
+    .product-section .product-context{
+        grid-template-columns: 1fr;
+    }
+    .above-footer .conatinar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-details{
+        flex-direction: column;
+    }
+    .hero nav .slider span{
+        font-size: 11px;
+        animation: move 7s ease infinite;
+    }
+    @keyframes move {
+        0%{
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(-200px);
+        }
+        100%{
+            transform: translateX(200px);
+        }
+        
+    }
+    .bottom-hamburger{
+        position: absolute;
+        right: 30px;
+        /* margin-top: 60px; */
+        top: 0px;
+    }
+    .top-hamburger{
+        margin-right: 12px;
+    }
+    .hero nav .navbar-1{
+        justify-content: space-between;
+    }
+    .above-footer .conatinar ul li .order a{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Responsive for screens <= 425px */
+  @media (max-width: 426px) {
+    /* Make the menu width 100% on very small devices */
+    .top-menu,
+    .bottom-menu {
+      width: 100vw;
+      right: 0;
+      left: 0;
+      border-radius: 0;
+    }
+    .hero nav .slider span{
+        font-size: 9px;
+        animation: move 5s ease infinite;
+    }
+    @keyframes move {
+        0%{
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(-65px);
+        }
+        100%{
+            transform: translateX(65px);
+        }
+        
+    }
+    /* Adjust padding for menu items */
+    .top-menu li,
+    .bottom-menu li {
+      padding: 14px 20px;
+    }
+  
+    /* Logo smaller */
+    .logo {
+      width: 110px;
+    }
+    .hero-section .hero-sec .A button .a{
+        font-size: 7px;
+    }
+   
+    .product-details{
+        flex-direction: column !important;
+    }
+  }
+  
