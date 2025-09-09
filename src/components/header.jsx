@@ -73,6 +73,14 @@ const Header = () => {
                 </Link>
               </div>
             </li>
+            <li>
+              <div className="nav-icons">
+                {/* <CiHeart style={{ fontSize: "25px" }} /> */}
+                <Link to="/adminlogin" className="a" onClick={closeMenus}>
+                  Admin Login
+                </Link>
+              </div>
+            </li>
 
             <li className="cart-menu-item">
               <div className="nav-icons">
