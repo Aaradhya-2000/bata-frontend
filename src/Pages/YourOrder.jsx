@@ -21,8 +21,8 @@ const OurOrder = () => {
     try {
       const api = `${BackendURL}user/order/?email=${email}`;
       const response = await axios.get(api);
-      console.log(response.data)
-      // setMydata(response.data);
+      // console.log(response.data)
+      setMydata(response.data);
     } catch (err) {
       toast.error("Failed to fetch order data");
       console.error("Failed to fetch order data", err);
