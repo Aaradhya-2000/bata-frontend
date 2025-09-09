@@ -14,11 +14,12 @@ const OurOrder = () => {
   const [savedReviews, setSavedReviews] = useState([]); // fetched reviews from backend
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
+  const email = localStorage.getItem("email");
 
   // Load orders from backend
   const loadData = async () => {
     try {
-      const api = `${BackendURL}user/order/?token=${token}`;
+      const api = `${BackendURL}user/order/?email=${email}`;
       const response = await axios.get(api);
       console.log(response.data)
       // setMydata(response.data);
