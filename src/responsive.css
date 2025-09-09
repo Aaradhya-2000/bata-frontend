@@ -240,5 +240,8 @@
     .product-details{
         flex-direction: column !important;
     }
+    .hero nav .navbar-1 ul{
+      gap: 10px;
+    }
   }
   
