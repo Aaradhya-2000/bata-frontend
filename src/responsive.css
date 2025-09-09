@@ -252,7 +252,7 @@
       width: 100%;
     }
     .order-wrapper{
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
 
   }
