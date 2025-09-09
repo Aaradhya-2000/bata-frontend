@@ -13,13 +13,15 @@ const OurOrder = () => {
   const [reviews, setReviews] = useState({}); // local review inputs state
   const [savedReviews, setSavedReviews] = useState([]); // fetched reviews from backend
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
 
   // Load orders from backend
   const loadData = async () => {
     try {
-      const api = `${BackendURL}admin/ourpro`;
+      const api = `${BackendURL}admin/order/?token=${token}`;
       const response = await axios.get(api);
-      setMydata(response.data);
+      console.log(response.data)
+      // setMydata(response.data);
     } catch (err) {
       toast.error("Failed to fetch order data");
       console.error("Failed to fetch order data", err);
@@ -28,7 +30,7 @@ const OurOrder = () => {
 
   // Authentication check
   const auth = () => {
-    const token = localStorage.getItem("token");
+   
     if (!token) {
       navigate("/login");
       toast.error("Login First");
