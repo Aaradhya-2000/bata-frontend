@@ -242,6 +242,10 @@
     }
     .hero nav .navbar-1 ul{
       gap: 10px;
+
+    }
+    .product-details .product-img{
+      width: 100%;
     }
   }
   
