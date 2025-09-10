@@ -268,5 +268,10 @@
     .above-footer .conatinar ul {
       gap: 20px;
     }
+    .thumbnail-img{
+      height: 30px;
+      width: 30px;
+    }
+
   }
   

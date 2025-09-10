@@ -50,7 +50,7 @@ const Header = () => {
             <li>
               <div className="nav-icons">
                 <IoMdHome style={{ fontSize: "25px" }} />
-                <Link to="home" className="a" onClick={closeMenus}>
+                <Link to="home"  className="a" onClick={closeMenus} >
                   Home
                 </Link>
               </div>
