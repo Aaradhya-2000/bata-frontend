@@ -180,7 +180,7 @@
         
     }
     .bottom-hamburger{
-        position: absolute;
+        position: fixed;
         right: 30px;
         /* margin-top: 60px; */
         top: 0px;
@@ -235,6 +235,7 @@
     }
     .hero-section .hero-sec .A button .a{
         font-size: 7px;
+        gap: 30px;
     }
    
     .product-details{
@@ -254,6 +255,18 @@
     .order-wrapper{
       grid-template-columns: 1fr;
     }
-
+    .form-container{
+      position: absolute;
+      top: 400px;
+    }
+    .hero-section .hero-sec .buttons {
+       padding: 10px 0px;
+    }
+    .product-section .product-context {
+      padding: 40px;
+    }
+    .above-footer .conatinar ul {
+      gap: 20px;
+    }
   }
   
