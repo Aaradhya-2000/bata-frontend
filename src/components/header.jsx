@@ -49,7 +49,7 @@ const Header = () => {
           <ul className={`top-menu ${topMenuOpen ? "open" : ""}`}>
             <li>
               <div className="nav-icons">
-                <IoMdHome style={{ fontSize: "25px" }} />
+                <IoMdHome style={{ fontSize: "25px" }} to="home" />
                 <Link to="home"  className="a" onClick={closeMenus} >
                   Home
                 </Link>
@@ -58,7 +58,7 @@ const Header = () => {
 
             <li>
               <div className="nav-icons">
-                <IoMdSearch style={{ fontSize: "25px" }} />
+                <IoMdSearch style={{ fontSize: "25px" }} to="search" />
                 <Link className="a" to="search" onClick={closeMenus}>
                   Search
                 </Link>
@@ -67,7 +67,7 @@ const Header = () => {
 
             <li>
               <div className="nav-icons">
-                <CiHeart style={{ fontSize: "25px" }} />
+                <CiHeart style={{ fontSize: "25px" }} to="/orders" />
                 <Link to="/orders" className="a" onClick={closeMenus}>
                   Orders
                 </Link>
