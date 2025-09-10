@@ -129,6 +129,10 @@ body{
     width: 100%;
   }
 }
+.thumbnail-img{
+  height: 70px;
+  width: 70px;
+}
 .hero {
   animation: img 4s ease-in 1 forwards;
 }
