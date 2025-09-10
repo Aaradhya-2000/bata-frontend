@@ -269,8 +269,12 @@
       gap: 20px;
     }
     .thumbnail-img{
-      height: 30px;
-      width: 30px;
+      height: 45px;
+      width: 45px;
+    }
+    .product-details {
+      padding: 30px;
+
     }
 
   }
