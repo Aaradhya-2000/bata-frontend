@@ -254,6 +254,7 @@
     }
     .order-wrapper{
       grid-template-columns: 1fr;
+      padding: 25px;
     }
     .form-container{
       position: absolute;
